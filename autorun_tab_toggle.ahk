@@ -26,6 +26,8 @@
 ; learned a bit more about their scripting language to simplify the tab 
 ; toggle, and to create the autorun toggle. Thanks Fisknils!
 
+#MaxHotkeysPerInterval 200
+
 ; ==============================================================
 ; =====  DRAGON AGE 1  =========================================
 ; ==============================================================

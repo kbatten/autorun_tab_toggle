@@ -42,6 +42,8 @@ return
 $Numpad0:: Gosub, AutorunToggleDA1
 ~w:: Gosub, AutoRunOffDA1
 ~s:: Gosub, AutoRunOffDA1
+LButton & RButton::Gosub, AutoRunOffDA1
+RButton & LButton::Gosub, AutoRunOffDA1
 
 AutorunToggleDA1:
  toggle := !toggle

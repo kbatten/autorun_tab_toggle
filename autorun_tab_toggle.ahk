@@ -39,7 +39,7 @@ $Tab::
 return
 
 
-$Numpad0:: Gosub, AutorunToggleDA1
+$z:: Gosub, AutorunToggleDA1
 ~w:: Gosub, AutoRunOffDA1
 ~s:: Gosub, AutoRunOffDA1
 LButton & RButton::Gosub, AutoRunOffDA1
@@ -47,12 +47,12 @@ RButton & LButton::Gosub, AutoRunOffDA1
 
 AutorunToggleDA1:
  toggle := !toggle
- Send % "{Numpad0 " . ((Toggle) ? ("down") : ("up")) . "}"
+ Send % "{z " . ((Toggle) ? ("down") : ("up")) . "}"
 return
 
 AutoRunOffDA1:
 toggle = ; Off
-Send {Numpad0 up}
+Send {z up}
 return
 
 ; If you want to add any custom hotkeys for DA1, do it below.
@@ -68,18 +68,18 @@ $Tab::
  Send % "{Tab " . ((Toggle) ? ("down") : ("up")) . "}"
 return
 
-$Numpad0:: Gosub, AutorunToggle
+$z:: Gosub, AutorunToggle
 ~w:: Gosub, AutoRunOff
 ~s:: Gosub, AutoRunOff
 
 AutorunToggle:
  toggle := !toggle
- Send % "{Numpad0 " . ((Toggle) ? ("down") : ("up")) . "}"
+ Send % "{z " . ((Toggle) ? ("down") : ("up")) . "}"
 return
 
 AutorunOff:
 toggle = ; Off
-Send {Numpad0 up}
+Send {z up}
 return
 
 
